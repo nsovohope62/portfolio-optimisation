@@ -107,3 +107,48 @@ During the testing period, the training-optimised portfolio recorded the highest
 The optimised allocation was concentrated in Microsoft (43.85%) and JPMorgan Chase (56.15%). This illustrates how mean-variance optimisation can produce concentrated allocations when it relies on estimated returns and covariance. Further investigation could examine allocation constraints and performance across additional testing periods.
 
 **Limitations:** The analysis uses a small selection of five US stocks, a single training/testing split, and historical estimates that may not represent future conditions. Transaction costs, taxes, and rebalancing costs are not included. The results are for educational purposes and do not constitute financial advice.
+
+## How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/nsovohope62/portfolio-optimisation.git
+cd portfolio-optimisation
+```
+
+### 2. Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+Activate it:
+
+**Linux / GitHub Codespaces / macOS**
+
+```bash
+source .venv/bin/activate
+```
+
+**Windows**
+
+```bash
+.venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the notebook
+
+```bash
+jupyter notebook notebooks/01_data_exploration.ipynb
+```
+
+The notebook downloads historical stock data using `yfinance`, calculates risk and return metrics, constructs and optimises portfolios, and evaluates the strategy on an out-of-sample testing period.
+
+**Note:** An internet connection is required to download market data. Historical results may change if the data source revises its records.
