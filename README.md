@@ -152,3 +152,9 @@ jupyter notebook notebooks/01_data_exploration.ipynb
 The notebook downloads historical stock data using `yfinance`, calculates risk and return metrics, constructs and optimises portfolios, and evaluates the strategy on an out-of-sample testing period.
 
 **Note:** An internet connection is required to download market data. Historical results may change if the data source revises its records.
+
+### Out-of-Sample Performance
+
+The chart below compares the cumulative growth of the equal-weight portfolio, training-optimised portfolio, and S&P 500 benchmark during the 2024–2025 testing period.
+
+![Out-of-Sample Performance Comparison](results/out_of_sample_growth.png)
