@@ -113,6 +113,8 @@ Sharpe ratios by test year:
 | SPY | 1.55 | 1.51 | 0.73 | 1.27 |
 | Optimised (no cap) | -0.57 | 1.41 | 0.68 | 0.51 |
 
+![Rolling-Window Average Sharpe Ratio](results/rolling_sharpe_bar.png)
+
 **Findings**
 
 * The unconstrained optimiser lost to equal-weight in all three years and averaged a Sharpe ratio of 0.51, versus 1.53 for equal-weight and 1.27 for SPY.
@@ -176,7 +178,8 @@ portfolio-optimisation/
 │   ├── efficient_frontier.png
 │   ├── individual_stock_risk_return.png
 │   ├── cumulative_returns.png
-│   └── out_of_sample_growth.png
+│   ├── out_of_sample_growth.png
+│   └── rolling_sharpe_bar.png
 ├── src/
 ├── requirements.txt
 ├── README.md
