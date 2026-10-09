@@ -91,3 +91,19 @@ Python programming, data analysis, statistical risk measurement, linear algebra,
 ## Disclaimer
 
 This project is for educational purposes only and does not constitute financial advice.
+
+## Out-of-Sample Validation
+
+To evaluate the optimised strategy on data not used during optimisation, the historical data was divided into a training period (2021–2023) and a testing period (2024–2025). The maximum-Sharpe portfolio weights were estimated using the training period and evaluated on the testing period.
+
+| Portfolio                    | Annual Return | Annual Volatility | Sharpe Ratio |
+| ---------------------------- | ------------: | ----------------: | -----------: |
+| Equal-Weight Portfolio       |        22.67% |            16.42% |         1.14 |
+| Training-Optimised Portfolio |        27.85% |            19.15% |         1.25 |
+| S&P 500 Benchmark (SPY)      |        20.68% |            16.37% |         1.02 |
+
+During the testing period, the training-optimised portfolio recorded the highest annualised return and Sharpe ratio among the three strategies. However, it also experienced the highest volatility.
+
+The optimised allocation was concentrated in Microsoft (43.85%) and JPMorgan Chase (56.15%). This illustrates how mean-variance optimisation can produce concentrated allocations when it relies on estimated returns and covariance. Further investigation could examine allocation constraints and performance across additional testing periods.
+
+**Limitations:** The analysis uses a small selection of five US stocks, a single training/testing split, and historical estimates that may not represent future conditions. Transaction costs, taxes, and rebalancing costs are not included. The results are for educational purposes and do not constitute financial advice.
