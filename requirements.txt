@@ -112,3 +112,4 @@ websocket-client==1.9.2
 websockets==17.2
 widgetsnbextension==4.0.16
 yfinance==1.7.0
+scikit-learn
